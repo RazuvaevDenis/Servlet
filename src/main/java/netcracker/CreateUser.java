@@ -1,6 +1,8 @@
 package netcracker;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class CreateUser {
     public HashMap createProperties(){
@@ -17,5 +19,11 @@ public class CreateUser {
         user.setAge("20");
         user.setNumber("123456789");
         return user;
+    }
+
+    public List<User> users(){
+        List<User> usersList=new ArrayList<>();
+        usersList.add(createUser());
+        return usersList;
     }
 }
